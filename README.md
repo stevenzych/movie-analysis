@@ -20,7 +20,7 @@ STEVEN Q
 
 # Question 4: Title Length And Ratings
 
-STEVEN Q
+![Violin Plot Of Title Length And Average Rating](/readme_images/titlelength_violin.PNG)
 
 # Recommendations
 
