@@ -10,12 +10,12 @@ For this research project, our team was tasked with aiding Microsoft's new movie
 1. How does the length of a film's title affect its ratings?
 
 We were given a set of data pulled from IMDB, Box Office Mojo, Rotten Tomatoes, The Movie Database, and The Numbers, which we then worked into operable Pandas DataFrames and SQL databases in order to answer our questions. All in all, the following packages were used:
-`* pandas
-* numpy`
-`* seaborn
-* matplotlib`
-`*sqlite3
-* glob`
+- Pandas
+- NumPy
+- Seaborn
+- Matplotlib
+- SQLite3
+- Glob
 
 # Question 1: 
 
@@ -39,9 +39,21 @@ So, does this mean this runtime range is the sweet spot for Microsoft to make mo
 
 # Question 4: Title Length And Ratings
 
+Our final research question investigated something a little stranger: Was their any correlation between a film's title length (counted in words, not letters) and how well it was rated? We intially assumed that there would be a correlation, that longer-named films would do worse than their shorter-named counterparts. After all, many movies have *you* seen with a twelve-word title? At the very least, lengthy names sounded like a left-field move.
+
+However, the data proved us wrong and showed that actually there is nearly no correlation between a film's title length and its average ratings. The plot below groups all films with the same title length and takes the overall average score. Note that group 16 is not an error, it just only contains one film.
+
 ![Violin Plot Of Title Length And Average Rating](/readme_images/titlelength_violin.PNG)
+
+It's almost a strangely consistent plot. To see if there was anything else going on, we took a look at the **total amount of ratings** given for all films with the same title length. Looking from group 2 to group 16, we see an almost perfect model of exponential decay. As title lengths go up, total number of reviews go down. But, let us not forget that the **total number of films** is also going down as title lengths go up.
+
 ![Line Plot Of Title Length And Total Ratings For All Films Of Same Length](/readme_images/titlelength_line.PNG)
+
+For this question's final plot, we looked at a more relative metric, **average number of ratings for any film with a given title length.** In other words, this plot shows how many ratings an x-word-title film is expected to get, and it's *quite* different from the previous plots. Whereas the last two were exceptionally regular, this one is nearly categorical. Films with one-to-seven word titles get around 9000 ratings, films with eight word titles get around **fifteen-thousand** ratings, and films with nine-or-more word titles dwindle off to nearly nothing.
+
 ![Bar Plot Of Average Number Of Ratings For Films With A Given Title Length](/readme_images/titlelength_bar.PNG)
+
+Further research is needed to sus out *why* this is going on, but for the time being we can say this: If Microsoft cares about how many ratings they're getting on IMDB and similar websites, we encourage them to give their films eight (or less) word titles.
 
 # Recommendations
 
@@ -55,9 +67,9 @@ In order for Microsoft to be successful in their cinematic ventures, it is imper
 
 Of course, no set of research is perfect, and no set of research wouldn't be enhance with more time or better resources. For each question below we have listed what would improve the accuracy and significance of our findings:
 1. **CALEB**
-1. 
+1. Runtime And ROI: If we had the time to focus on only movies made by major studios, we may have seen different distributions of median ROI. It is possible that many indie films are in the range with a negative median ROI.
 1. **CALEB**
-1. 
+1. Title Length And Rating: If we had the time and data to explore this question in regards to film translations as well, we could provide Microsoft with better insight into how to name their films when releasing globally.
 
 # Conclusion
 
