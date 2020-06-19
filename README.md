@@ -3,12 +3,17 @@
 
 # Introduction
 
-Explain packages, premise of research, introduce each question, 
+For this research project, our team was tasked with aiding Microsoft's new movie studio in deciding what type of movies to make. We decided on four key questions designed to elucidate current trends in the film industry:
+1. **CALEB QUESTION 1**
+1. How does a film's runtime affect its ROI?
+1. **CALEB QUESTION 2**
+1. How does the length of a film's title affect its ratings?
+
+We were given a set of data pulled from IMDB, Box Office Mojo, Rotten Tomatoes, and The Movie Database. To answer our
 
 # Question 1: 
 
-~~Caleb do ya thang here.~~
-**Remember for each Q Abhineet said we should have:assumption, finding, reccomendation**
+**CALEB QUESTION 1. Remember for each Q Abhineet said we should have:assumption, finding, reccomendation**
 
 # Question 2: Runtime And ROI
 
@@ -16,7 +21,7 @@ STEVEN Q
 
 # Question 3:
 
-~~Caleb dis you again.~~
+**CALEB QUESTION 2. Remember for each Q Abhineet said we should have:assumption, finding, reccomendation**
 
 # Question 4: Title Length And Ratings
 
