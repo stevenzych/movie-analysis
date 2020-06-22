@@ -77,7 +77,7 @@ In order for Microsoft to be successful in their cinematic ventures, it is imper
 
 # Future Research
 
-Of course, no set of research is perfect, and no set of research wouldn't be enhance with more time or better resources. For each question below we have listed what would improve the accuracy and significance of our findings:
+Of course, no set of research is perfect, and no set of research wouldn't be enhanced with more time or better resources. For each question below we have listed what would improve the accuracy and significance of our findings:
 1. Genre and ROI: It will be worth examining whether or not we can combine animation, adventure, and fantasy together to bring in an even greater ROI than what they already bring on their own. 
 1. Runtime And ROI: If we had the time to focus on only movies made by major studios, we may have seen different distributions of median ROI. It is possible that many indie films are in the range with a negative median ROI.
 1. Language And ROI: It is possible that the ROI for the languages we looked at will be higher if they are in films created in the region and/or nation that the language is primarily spoken in. It would be worth looking into, for example, whether a Turkish-language film produced in America would receive the same ROI as one produced in Turkey. 
@@ -85,4 +85,4 @@ Of course, no set of research is perfect, and no set of research wouldn't be enh
 
 # Conclusion
 
-**Conclude, thank Microsoft, etc.**
+We would like to thank Microsoft and the soon-to-be Microsoft Film Studios for this opportunity to work together. We look forward to a fortuitous and enduring research relationship.
