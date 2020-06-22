@@ -3,10 +3,10 @@
 
 # Introduction
 
-For this research project, our team was tasked with aiding Microsoft's new movie studio in deciding what type of movies to make. We decided on four key questions designed to elucidate current trends in the film industry:
-1. **CALEB QUESTION 1**
+For this research project, our team was tasked with aiding Microsoft's new movie studio in deciding what type of movies to make. We decided on four key questions designed to elucidate current trends in the film indFustry:
+1. Is there a genre with low market share and high ROI that we can tap into?
 1. How does a film's runtime affect its ROI?
-1. **CALEB QUESTION 2**
+1. Can the success of a non-English language film predict its ROI?
 1. How does the length of a film's title affect its ratings?
 
 We were given a set of data pulled from IMDB, Box Office Mojo, Rotten Tomatoes, The Movie Database, and The Numbers, which we then worked into operable Pandas DataFrames and SQL databases in order to answer our questions. All in all, the following packages were used:
@@ -17,9 +17,17 @@ We were given a set of data pulled from IMDB, Box Office Mojo, Rotten Tomatoes, 
 - SQLite3
 - Glob
 
-# Question 1: 
+# Question 1: Underused Genres and ROI
 
-**CALEB QUESTION 1. Remember for each Q Abhineet said we should have:assumption, finding, reccomendation**
+We began our analysis with the assumption that Microsoft will want to distinguish itself from the many existing studios that already put out a great deal of content. We also assumed that while Microsoft will be willing to takes risks, they will also want to ensure that their investors are kept safe. While this may not be Microsoft's primary stream of revenue, we imagine it will take a sizable investment to properly compete with the likes of Disney, Netflix, Amazon, and the like who already have studios up and running. We feel, therefore, that a foray into genres with a low market share that also return a high ROI could be a good place to begin. Finally, we begin with an assumption that horror will be among the genres with low prevalence and high ROI--with films like The Conjuring, Hereditary, and Midsommar becoming quite popular as of late and yet not so prevalent, this may be a genre that Microsoft will want to invest in. 
+
+Our first plot shows the distribution of ROI amongst the genres that hold between 2 and 6% of the market share according to the data we worked with. The two tables that were joined for analysis here came from IMDB's title_basics dataframe and The Movie Database's budgets database. After taking time to analyze this plot, we realize that there are three genres worth analyzing more deeply: Adventure, Fantasy, and Animation. Unfortunately, even though Horror had the largest market share of the genres we analyzed and even though its distribution skews positively towards a higher ROI, we feel that the median ROI and a symmetrical distribution may produce a more predictable result for the investors. 
+
+FIRST PLOT HERE
+
+Looking more closely at our three genres, we see that the median ROI for adventure and fantasy is 100 and for animation it is 200. We can recommend that Microsoft look into a major animated film as one of its first releases as well as further research into whether or not it may be wise to combine the animation genre with adventure and/or fantasy.
+
+SECOND PLOT HERE
 
 # Question 2: Runtime And ROI
 
@@ -33,9 +41,13 @@ So, does this mean this runtime range is the sweet spot for Microsoft to make mo
 
 ![Bar Plot Of Runtime And Median ROI](/readme_images/runtime_bar.PNG)
 
-# Question 3:
+# Question 3: Language and ROI
 
-**CALEB QUESTION 2. Remember for each Q Abhineet said we should have:assumption, finding, reccomendation**
+Our third question brought us to a topic that many studios seem to be looking at more and more recently. With Netflix extending its reach around the world creating such successful non-English-speaking shows as Narcos (Spanish), Fauda (Hebrew), Caliphate (Swedish), and Kingdoms (South Korean) as well as films such as the incredibly-successful 365 Dni (Polish), it is not a field that we believe should be ignored. While this may not need to be a consideration at the very beginning of the studio's launch, it may be wise to consider investing in films translated into and perhapse even filmed originally in languages aside from English. We assume that there is a market for non-English-speaking films and that it will translate into a healthy ROI for investors. 
+
+Our plot below reflects good results for our assumption! After separating out our languages and plotting them against their corresponding ROI, we determined that the top four languages, aside from English, being used (which represent between 4 and 20% of the market share) were Hebrew, Turkish, French and Swedish. Hebrew and Turkish both returned an ROI of around 200 however neither of the other two languages dipped below a 150 ROI. This leads us to believe that it is worth the investment to invest in a dubbing department and, perhaps, invest in productions that will be filmed in one of the four languages we have mentioned here, particularly Hebrew or Turkish. 
+
+PLOT IMAGE HERE
 
 # Question 4: Title Length And Ratings
 
@@ -58,17 +70,17 @@ Further research is needed to sus out *why* this is going on, but for the time b
 # Recommendations
 
 In order for Microsoft to be successful in their cinematic ventures, it is imperative they follow the recommendations towards which this research builds. Here, below, they are listed in their simplest forms:
-1. **CALEB**
+1. Make sure an animated film is one of the first films you release!
 1. Movies should be 90-119 minutes long.
-1. **CALEB**
+1. Hebrew & Turkish should be considered as languages for future projects. 
 1. Movie titles should be 8 words or less.
 
 # Future Research
 
 Of course, no set of research is perfect, and no set of research wouldn't be enhance with more time or better resources. For each question below we have listed what would improve the accuracy and significance of our findings:
-1. **CALEB**
+1. Genre and ROI: It will be worth examining whether or not we can combine animation, adventure, and fantasy together to bring in an even greater ROI than what they already bring on their own. 
 1. Runtime And ROI: If we had the time to focus on only movies made by major studios, we may have seen different distributions of median ROI. It is possible that many indie films are in the range with a negative median ROI.
-1. **CALEB**
+1. Language And ROI: It is possible that the ROI for the languages we looked at will be higher if they are in films created in the region and/or nation that the language is primarily spoken in. It would be worth looking into, for example, whether a Turkish film produced in America would receive the same ROI as one produced in Turkey. 
 1. Title Length And Rating: If we had the time and data to explore this question in regards to film translations as well, we could provide Microsoft with better insight into how to name their films when releasing globally.
 
 # Conclusion
