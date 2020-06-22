@@ -23,11 +23,11 @@ We began our analysis with the assumption that Microsoft will want to distinguis
 
 Our first plot shows the distribution of ROI amongst the genres that hold between 2 and 6% of the market share according to the data we worked with. The two tables that were joined for analysis here came from IMDB's title_basics dataframe and The Movie Database's budgets database. After taking time to analyze this plot, we realize that there are three genres worth analyzing more deeply: Adventure, Fantasy, and Animation. Unfortunately, even though Horror had the largest market share of the genres we analyzed and even though its distribution skews positively towards a higher ROI, we feel that the median ROI and a symmetrical distribution may produce a more predictable result for the investors. 
 
-FIRST PLOT HERE
+![Boxplot of Low Market Share Genres and ROI](/readme_images/genre_roi_big.png)
 
 Looking more closely at our three genres, we see that the median ROI for adventure and fantasy is 100 and for animation it is 200. We can recommend that Microsoft look into a major animated film as one of its first releases as well as further research into whether or not it may be wise to combine the animation genre with adventure and/or fantasy.
 
-SECOND PLOT HERE
+![Boxplot of 3 Most Successful Low Market Share Genres ](/readme_images/genre_roi_over_100.png)
 
 # Question 2: Runtime And ROI
 
@@ -47,7 +47,7 @@ Our third question brought us to a topic that many studios seem to be looking at
 
 Our plot below reflects good results for our assumption! After separating out our languages and plotting them against their corresponding ROI, we determined that the top four languages, aside from English, being used (which represent between 4 and 20% of the market share) were Hebrew, Turkish, French and Swedish. Hebrew and Turkish both returned an ROI of around 200 however neither of the other two languages dipped below a 150 ROI. This leads us to believe that it is worth the investment to invest in a dubbing department and, perhaps, invest in productions that will be filmed in one of the four languages we have mentioned here, particularly Hebrew or Turkish. 
 
-PLOT IMAGE HERE
+![Boxplot of Non-English Language Films and ROI](/readme_images/roi_of_language.png)
 
 # Question 4: Title Length And Ratings
 
@@ -80,7 +80,7 @@ In order for Microsoft to be successful in their cinematic ventures, it is imper
 Of course, no set of research is perfect, and no set of research wouldn't be enhance with more time or better resources. For each question below we have listed what would improve the accuracy and significance of our findings:
 1. Genre and ROI: It will be worth examining whether or not we can combine animation, adventure, and fantasy together to bring in an even greater ROI than what they already bring on their own. 
 1. Runtime And ROI: If we had the time to focus on only movies made by major studios, we may have seen different distributions of median ROI. It is possible that many indie films are in the range with a negative median ROI.
-1. Language And ROI: It is possible that the ROI for the languages we looked at will be higher if they are in films created in the region and/or nation that the language is primarily spoken in. It would be worth looking into, for example, whether a Turkish film produced in America would receive the same ROI as one produced in Turkey. 
+1. Language And ROI: It is possible that the ROI for the languages we looked at will be higher if they are in films created in the region and/or nation that the language is primarily spoken in. It would be worth looking into, for example, whether a Turkish-language film produced in America would receive the same ROI as one produced in Turkey. 
 1. Title Length And Rating: If we had the time and data to explore this question in regards to film translations as well, we could provide Microsoft with better insight into how to name their films when releasing globally.
 
 # Conclusion
